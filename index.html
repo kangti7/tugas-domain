@@ -3,21 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Tugas Web</title>
+    <title>Profil Diri - Mahasiswa Teknik Informatika</title>
+    <meta name="description" content="Halaman profil diri resmi milik mahasiswa Teknik Informatika UIN Sunan Gunung Djati Bandung.">
+    
+    <!-- Open Graph / Social Media Metadata -->
+    <meta property="og:title" content="Profil Diri - Mahasiswa Teknik Informatika">
+    <meta property="og:description" content="Halaman profil akademik dan biodata singkat mahasiswa.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/kangti7/tugas-domain/main/images/profile.jpg">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="card">
-        <img src="images/profile.jpg" alt="Foto Profil" class="profile-img" onerror="this.src='https://via.placeholder.com/150'">
-        <h1>Halo, Selamat Datang!</h1>
-        <p>Website ini dibuat untuk memenuhi tugas mata kuliah pengembangan aplikasi web.</p>
-        
-        <div class="info-box">
-            <p><strong>Status:</strong> Online via Vercel</p>
-            <p><strong>Platform:</strong> Subdomain Gratis</p>
-        </div>
 
-        <a href="https://github.com" target="_blank" class="btn">Kunjungi GitHub Saya</a>
-    </div>
+    <!-- Header & Navigasi -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#profil">Profil</a></li>
+                <li><a href="#jadwal">Mata Kuliah</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Konten Utama -->
+    <main>
+        <!-- Bagian Profil -->
+        <section id="profil" class="card">
+            <img src="images/profile.jpg" alt="Foto Profil Mahasiswa Teknik Informatika" class="profile-img" onerror="this.src='https://via.placeholder.com/150'">
+            <h1>Kemal Muhammad Zaki</h1>
+            <p>Mahasiswa <strong>Teknik Informatika</strong> UIN Sunan Gunung Djati Bandung. Memiliki ketertarikan dalam bidang pengembangan web dan teknologi.</p>
+            
+            <div class="info-box">
+                <p><strong>NIM:</strong> 1247050042</p>
+                <p><strong>Status:</strong> Aktif</p>
+            </div>
+            
+            <a href="https://github.com/kangti7" target="_blank" class="btn">Kunjungi GitHub Saya</a>
+        </section>
+
+        <!-- Bagian Tabel Mata Kuliah -->
+        <section id="jadwal" class="table-section">
+            <h2>Mata Kuliah Semester Ini</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Mata Kuliah</th>
+                        <th>SKS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Pemrograman Berorientasi Objek (PBO)</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Struktur Data & Algoritma</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Basis Data</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Sistem Operasi</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="kontak">
+        <p>&copy; 2026 - Dibuat untuk Tugas Pengembangan Aplikasi Web.</p>
+    </footer>
+
 </body>
 </html>
