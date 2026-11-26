@@ -1,0 +1,19 @@
+{
+  "name": "tugas-domain",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Website portofolio Muhamad Giast Al-Munawar dengan integrasi aplikasi Todo Kuliah.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "devDependencies": {
+    "typescript": "~7.0.2",
+    "vite": "^8.3.6"
+  }
+}
