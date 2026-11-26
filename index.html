@@ -1,89 +1,229 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil Diri - Mahasiswa Teknik Informatika</title>
-    <meta name="description" content="Halaman profil diri resmi milik mahasiswa Teknik Informatika UIN Sunan Gunung Djati Bandung.">
-    
-    <!-- Open Graph / Social Media Metadata -->
-    <meta property="og:title" content="Profil Diri - Mahasiswa Teknik Informatika">
-    <meta property="og:description" content="Halaman profil akademik dan biodata singkat mahasiswa.">
-    <meta property="og:image" content="https://raw.githubusercontent.com/kangti7/tugas-domain/main/images/profile.jpg">
-    
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f5f7fb" />
+    <title>Muhamad Giast Al-Munawar — Portofolio</title>
+    <meta
+      name="description"
+      content="Portofolio Muhamad Giast Al-Munawar, mahasiswa Teknik Informatika UIN Sunan Gunung Djati Bandung. Profil, proyek, dan kontak."
+    />
 
-    <!-- Header & Navigasi -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#profil">Profil</a></li>
-                <li><a href="#jadwal">Mata Kuliah</a></li>
-                <li><a href="#kontak">Kontak</a></li>
-            </ul>
+    <!-- Open Graph / media sosial -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Muhamad Giast Al-Munawar — Portofolio" />
+    <meta
+      property="og:description"
+      content="Mahasiswa Teknik Informatika UIN Sunan Gunung Djati Bandung. Lihat profil dan proyek yang sedang dikembangkan."
+    />
+    <meta property="og:image" content="https://tugas-domain.vercel.app/images/profile.jpg" />
+    <meta property="og:url" content="https://tugas-domain.vercel.app/" />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/portfolio/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Lewati ke konten utama</a>
+
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="#profil" aria-label="Muhamad Giast Al-Munawar, kembali ke atas">
+          <span class="brand-mark" aria-hidden="true">MG</span>
+          <span class="brand-text">Giast<span class="brand-dot">.</span></span>
+        </a>
+
+        <nav class="site-nav" aria-label="Navigasi utama">
+          <a href="#profil">Profil</a>
+          <a href="#proyek">Proyek</a>
+          <a href="#kontak">Kontak</a>
         </nav>
+
+        <a
+          class="header-cta"
+          href="https://github.com/kangti7"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub <span aria-hidden="true">↗</span>
+        </a>
+      </div>
     </header>
 
-    <!-- Konten Utama -->
-    <main>
-        <!-- Bagian Profil -->
-        <section id="profil" class="card">
-            <img src="images/profile.jpg" alt="Foto Profil Mahasiswa Teknik Informatika" class="profile-img" onerror="this.src='https://via.placeholder.com/150'">
-            <h1>MUHAMAD GIAST AL-MUNAWAR</h1>
-            <p>Mahasiswa <strong>Teknik Informatika</strong> UIN Sunan Gunung Djati Bandung. Memiliki ketertarikan dalam bidang pengembangan web dan teknologi.</p>
-            
-            <div class="info-box">
-                <p><strong>NIM:</strong> 1247050042</p>
-                <p><strong>Status:</strong> Aktif</p>
-            </div>
-            
-            <a href="https://github.com/kangti7" target="_blank" class="btn">Kunjungi GitHub Saya</a>
-        </section>
+    <main id="main">
+      <!-- Profil -->
+      <section id="profil" class="hero">
+        <div class="wrap hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">PORTOFOLIO MAHASISWA</p>
+            <h1>Muhamad Giast<br />Al-Munawar</h1>
+            <p class="hero-role">Teknik Informatika · UIN Sunan Gunung Djati Bandung</p>
+            <p class="hero-desc">
+              Mahasiswa yang tertarik pada pengembangan web, aplikasi mobile, dan pengelolaan
+              data. Terbiasa membangun antarmuka dengan TypeScript, Vite, dan CSS modern, serta
+              bereksperimen dengan Kotlin dan SQL.
+            </p>
 
-        <!-- Bagian Tabel Mata Kuliah -->
-        <section id="jadwal" class="table-section">
-            <h2>Mata Kuliah Semester Ini</h2>
-            <table><tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Aljabar Linier</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Manajemen Basis Data</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Jaringan Komputer</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Pengembangan Aplikasi Mobile</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>Pengembangan Aplikasi Web</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td>Interaksi Manusia dan Komputer</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td>Intelegensia Buatan</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>8</td>
-                        <td>Manajemen Proyek Perangkat Lunak</td>
-                        <td>3</td>
-                    </tr>
-                </tbody>
+            <div class="hero-meta">
+              <span class="meta-chip"><span class="meta-label">NIM</span> 1247050042</span>
+              <span class="meta-chip meta-chip-live">
+                <span class="dot" aria-hidden="true"></span> Aktif
+              </span>
+              <span class="meta-chip">Bandung, Indonesia</span>
+            </div>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#proyek">Lihat Proyek</a>
+              <a class="btn btn-ghost" href="mailto:mgiastalmunawar@gmail.com">Hubungi Saya</a>
+            </div>
+          </div>
+
+          <div class="hero-photo">
+            <div class="photo-frame">
+              <img
+                src="/images/profile.jpg"
+                alt="Foto Muhamad Giast Al-Munawar"
+                width="320"
+                height="320"
+              />
+            </div>
+            <div class="photo-badge">
+              <strong>Web &amp; Mobile</strong>
+              <span>Developer</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Proyek -->
+      <section id="proyek" class="section">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="eyebrow">KARYA TERPILIH</p>
+            <h2>Proyek</h2>
+            <p class="section-desc">
+              Pratinjau di bawah adalah aplikasi yang benar-benar berjalan — bisa langsung
+              dicoba tanpa meninggalkan halaman ini.
+            </p>
+          </div>
+
+          <article class="project-card">
+            <div class="project-top">
+              <div class="project-summary">
+                <p class="project-kicker">Aplikasi Web · 2026</p>
+                <h3>Todo Kuliah</h3>
+                <p class="project-desc">
+                  Aplikasi pengelola tugas dan jadwal mata kuliah. Mendukung tambah, edit, dan
+                  hapus tugas, filter berdasarkan mata kuliah serta hari, penanda tenggat
+                  terlambat, dan ringkasan progres. Seluruh data tersimpan otomatis di
+                  LocalStorage browser tanpa backend.
+                </p>
+              </div>
+
+              <div class="project-side">
+                <ul class="tag-list" aria-label="Teknologi yang digunakan">
+                  <li>TypeScript</li>
+                  <li>Vite</li>
+                  <li>CSS</li>
+                  <li>LocalStorage</li>
+                </ul>
+                <div class="project-actions">
+                  <a
+                    class="btn btn-primary"
+                    href="https://github.com/kangti7/todo-kuliah"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Lihat Repo
+                  </a>
+                  <a
+                    class="btn btn-ghost"
+                    href="/todo-kuliah/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Buka Web <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-preview">
+              <div class="browser">
+                <div class="browser-bar">
+                  <span class="browser-dots" aria-hidden="true">
+                    <i></i><i></i><i></i>
+                  </span>
+                  <span class="browser-url">tugas-domain.vercel.app/todo-kuliah</span>
+                  <a
+                    class="browser-open"
+                    href="/todo-kuliah/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Buka Todo Kuliah di tab baru"
+                  >
+                    ↗
+                  </a>
+                </div>
+                <iframe
+                  class="project-iframe"
+                  src="/todo-kuliah/"
+                  title="Pratinjau live aplikasi Todo Kuliah"
+                  loading="lazy"
+                ></iframe>
+              </div>
+              <p class="preview-note">
+                Pratinjau interaktif — coba tambahkan tugas langsung di sini. Data tersimpan di
+                browser kamu sendiri.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Kontak -->
+      <section id="kontak" class="section section-contact">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="eyebrow">HUBUNGI</p>
+            <h2>Kontak</h2>
+            <p class="section-desc">
+              Terbuka untuk diskusi, kolaborasi tugas, atau sekadar bertukar ide.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <a class="contact-card" href="mailto:mgiastalmunawar@gmail.com">
+              <span class="contact-icon" aria-hidden="true">@</span>
+              <span class="contact-label">Email</span>
+              <strong>mgiastalmunawar@gmail.com</strong>
+            </a>
+            <a
+              class="contact-card"
+              href="https://github.com/kangti7"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="contact-icon" aria-hidden="true">&lt;/&gt;</span>
+              <span class="contact-label">GitHub</span>
+              <strong>github.com/kangti7</strong>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <span>© 2026 Muhamad Giast Al-Munawar</span>
+        <span>Dibangun dengan TypeScript &amp; Vite</span>
+      </div>
+    </footer>
+  </body>
+</html>
